@@ -17,5 +17,17 @@ public class MainTest {
 
 
    }
+    @Test
+
+    void testShouldGreetingReturnNotCorrectMessage(){
+        Main main = new Main();
+
+        String greeting = main.getGreeting("Test2");
+
+        assertEquals("Hello, Test2!", greeting);
+
+
+    }
+
 
 }
